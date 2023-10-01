@@ -54,12 +54,12 @@ public class BrowserFactory {
 			
 		}
 		else if(browser.equalsIgnoreCase("FF")){
-//			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Desktop\\Tutorials\\Drivers\\geckodriver.exe");
-//			 webDriver.set(new FirefoxDriver());
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\clark\\OneDrive\\Documentos\\geckodriver.exe");
+			 webDriver.set(new FirefoxDriver());
 			 
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
 			 
-			 webDriver.set(new RemoteWebDriver(new URL("http://192.168.26.1:4444/wd/hub"),capabilities));
+			// webDriver.set(new RemoteWebDriver(new URL("http://192.168.26.1:4444/wd/hub"),capabilities));
 		}
 	}
 
