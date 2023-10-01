@@ -4,7 +4,7 @@ Feature: Testing Online Fruits and Veggies
   @Login
   Scenario: Login to Online Fruits and Veggies
   	Given User Launches the APP
-  				|http://ec2-54-80-178-254.compute-1.amazonaws.com/|
+  				|http://3.220.41.50/|
     When User gives the Username as "Online_User"
     And User gives the password as "T25saW5lX1VzZXI="
     Then User Clicks on Login button
