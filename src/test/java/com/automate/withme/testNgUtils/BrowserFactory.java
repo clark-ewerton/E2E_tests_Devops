@@ -32,14 +32,14 @@ public class BrowserFactory {
 		DesiredCapabilities caps = null;
 		if(browser.equalsIgnoreCase("chrome")){
 			
-//			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\Tutorials\\Drivers\\chromedriver.exe");
-//			webDriver.set(new ChromeDriver());
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\clark\\OneDrive\\Documentos\\chromedriver.exe");
+			webDriver.set(new ChromeDriver());
 			ChromeOptions options = new ChromeOptions();
-//		    options.addArguments("--start-maximized");
-//		    options.addArguments("--disable-infobars");
-		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		    dc.setCapability(ChromeOptions.CAPABILITY, options);
-		webDriver.set( new RemoteWebDriver(new URL("http://192.168.26.1:4444/wd/hub"),dc));
+		    options.addArguments("--start-maximized");
+		    options.addArguments("--disable-infobars");
+//		DesiredCapabilities dc = DesiredCapabilities.chrome();
+//		    dc.setCapability(ChromeOptions.CAPABILITY, options);
+//		webDriver.set( new RemoteWebDriver(new URL("http://192.168.26.1:4444/wd/hub"),dc));
 
 			
 		}
